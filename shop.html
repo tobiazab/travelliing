@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- metadata -->
+    <link rel="shortcut icon" href="../img/logo2.jpeg" type="image/x-icon" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <title>Travelling</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400..800&display=swap" rel="stylesheet">
+    <!-- Organicé los links de las fuentes tipográficas -->
+    <script src="scripts.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo-container">
+                    <a href="../index.html"><img src="../img/logo2.jpeg" alt=""></a> 
+                    <div><h1>Travelling</h1></div> 
+                    <!-- Anadí este div con el nombre de la pagina -->
+                </div>
+            
+                <!-- Eliminé el logo repetido de está parte  -->
+
+              <ul class="nav-links">
+                <li><a href="../carrito/carrito.html"><p><img id="cartlogo" src="../img/cart-logo.png" alt=""></p></a></li>
+                <li><a href="../index.html"><p>Home</p></a></li>
+                <li><a href="./shop.html"><p>Destinos</p></a></li>
+                <li><a href="../login/login.html"><p>Iniciar Sesion</p></a></li>
+              </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="promociones">
+            <!-- <a href="#mdz"> --><div class="mdz">
+                <span class="promo-titulo">Mendoza, Argentina</span>
+            </div><!-- </a> -->
+            <!-- <a href="#mxc"> --><div class="yuca">
+                <span class="promo-titulo-yuca">Yucatán, México</span>
+            </div><!-- </a> -->
+            <!-- <a href="#cdb"> --><div class="cor">
+                <span class="promo-titulo">Cordoba, Mendoza</span>
+            </div><!-- </a> -->
+        </div>
+
+
+        <ul class="destinos">
+            <li id="america" onclick="amebtn()">AMERICA</li>
+            <li id="europa" onclick="eurobtn()">EUROPA</li>
+            <li id="todos" onclick="todosbtn()">TODOS</li>
+            <li id="asia" onclick="asiabtn()">ASIA</li>
+            <li id="oceania" onclick="oceabtn()">OCEANIA</li>
+          </ul>
+
+          <!-- Acorté la descripción de las cards para que no se viera saturado -->
+
+        <div class="card-container">
+            <div class="card oceania">
+                <img src="https://static1.squarespace.com/static/55ee34aae4b0bf70212ada4c/57d9829837c5819632bc630b/5e06e89e74877f00dbb21494/1577545446402/keith-zhu-qaNcz43MeY8-unsplash+%281%29.jpg?format=1500w" alt="Australia"/>
+                <h2>Sydney, Australia</h2>
+                <p>Sídney, capital de Nueva Gales del Sur, es famosa por su icónica Casa de la Ópera y su puerto. Destacan el Puerto Darling, el Circular Quay, el puente de la bahía y el Real Jardín Botánico. La Sydney Tower ofrece vistas panorámicas de la ciudad y los suburbios.</p>
+                <div class="compra-plato">
+                    <p><strong>$40000</strong></p>
+                    <button>Conocer</button>
+                </div>
+            </div>
+            <div class="card europa">
+                 <img src="https://a.cdn-hotels.com/gdcs/production160/d1913/579b250e-49fe-44ed-9f9e-39d8d53a8c75.jpg?impolicy=fcrop&w=800&h=533&q=medium"
+                 alt="Suecia" />
+                <h2>Estocolmo, Suecia</h2>
+                <p>Suecia, una nación escandinava con numerosas islas costeras y lagos, posee extensos bosques y montañas nevadas. Sus principales ciudades, Estocolmo, Malmö y Gotemburgo, son costeras. Estocolmo, construida sobre 14 islas, cuenta con más de 50 puentes, palacios y museos.</p>
+            <div class="compra-plato">
+                <p><strong>$45000</strong></p>
+                <button>Conocer</button>
+            </div>
+
+            </div>
+            <div class="card asia">
+                <img src="https://lonelyplanetes.cdnstatics2.com/sites/default/files/styles/max_1300x1300/public/fotos/coreadelsur_seul_dongdaemundesignplaza_shutterstockrf_670991701_fenlioq_shutterstock.jpg?itok=J4MNT6CJ" alt="Seul , Corea del sur "/>
+                <h2>Seúl, Corea del Sur </h2>
+                <p>Seúl, capital de Corea del Sur, mezcla historia y modernidad con palacios, templos, rascacielos y cultura pop. Disfrute de la vibrante vida nocturna, la gastronomía callejera y la avanzada tecnología. Es una ciudad donde el pasado y el futuro se entrelazan fascinantemente.</p>
+            <div class="compra-plato">
+                    <p><strong>$55000</strong></p>
+                    <button>Conocer</button>
+            </div>
+        </div>
+            <div id="mxc" class="card america">
+                <img src="https://www.yucatan.gob.mx/docs/galerias/chichen_itza/38.jpg?impolicy=fcrop&w=1040&h=580&q=mediumHigh" alt="Yucatán, México"/>
+                <h2>Yucatán, México</h2>
+                <p>Yucatán, Es el estado más visitado de México ya que alberga una ciudad legendaria maya , Chichén Itzá es cuál es una de las siete maravillas del mundo moderno desde 2007, el cuál fue un centro cultural y político de la civilización maya </p>
+            <div class="compra-plato">
+                    <p><strong>$65000</strong></p>
+                    <button>Conocer</button>
+            </div>
+        </div>
+        <div id="cdb" class="card america">
+                <img src="https://mediaim.expedia.com/destination/1/6a8203b71ad6e62e6b4d6b9923a2ca59.jpg?impolicy=fcrop&w=1040&h=580&q=mediumHigh" alt="Cordoba, Argentina"/>
+                <h2>Cordoba, Argentina</h2>
+                <p>Córdoba, capital de la provincia argentina homónima, destaca por su arquitectura colonial española. Alberga la Manzana Jesuítica del siglo XVII y la Universidad Nacional de Córdoba. El centro de la ciudad es la Plaza San Martín, junto a la Catedral de Córdoba de estilo neobarroco.</p>
+            <div class="compra-plato">
+                    <p><strong>$45000</strong></p>
+                    <button>Conocer</button>
+            </div>
+        </div>
+        <div id="mdz" class="card america">
+            <img src="https://www.argentina.gob.ar/sites/default/files/2020/06/provincia-mendoza-jumbotron.jpg" alt="mendoza"/>
+            <h2>Mendoza, Argentina</h2>
+            <p>Mendoza, en la región de Cuyo, es el corazón vitivinícola de Argentina, famosa por sus Malbecs. Sus bodegas ofrecen degustaciones y visitas guiadas. La ciudad tiene calles amplias, edificios modernos y art déco, y la Plaza Independencia, donde se encuentra el Museo Municipal de Arte Moderno.</p>
+            <div class="compra-plato">
+                <p><strong>$40000</strong></p>
+                <button>Conocer</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Travelling®</p>
+    </footer>
+</body>
+</html>
